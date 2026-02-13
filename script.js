@@ -8,7 +8,7 @@ function validateConfig() {
     // Check required fields
     if (!config.valentineName) {
         warnings.push("Valentine's name is not set! Using default.");
-        config.valentineName = "My Love";
+        config.valentineName = "My Kannama 🌊";
     }
 
     // Validate colors
@@ -181,7 +181,7 @@ function celebrate() {
     
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').textContent = config.celebration.message;
+    document.getElementById('celebrationMessage').innerHTML = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
     // Create heart explosion effect
