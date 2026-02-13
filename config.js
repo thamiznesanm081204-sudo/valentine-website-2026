@@ -50,7 +50,6 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug,a huge kiss and your flowers! <a href='https://digibouquet.vercel.app/bouquet/40b57c4c-aa05-4f5d-8c4b-31bc126ccc05' target='_blank'>Get your flowers here 💐</a>",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
