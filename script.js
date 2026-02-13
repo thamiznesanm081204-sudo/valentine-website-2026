@@ -179,10 +179,30 @@ function celebrate() {
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
     
+    // Title
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
-    document.getElementById('celebrationMessage').innerHTML = config.celebration.message;  // ← THIS FIX
+    
+    // Message with manual link
+    const msgEl = document.getElementById('celebrationMessage');
+    msgEl.innerHTML = '';  // Clear any existing content
+    
+    const text1 = document.createTextNode("Now come get your gift, a big warm hug and a huge kiss! ");
+    msgEl.appendChild(text1);
+    
+    // Create clickable link
+    const link = document.createElement('a');
+    link.href = 'https://digibouquet.vercel.app/bouquet/40b57c4c-aa05-4f5d-8c4b-31bc126ccc05';  // Replace with actual URL
+    link.target = '_blank';
+    link.textContent = 'Get your flowers here 💐';
+    link.style.color = '#ff69b4';  // Pretty pink color
+    link.style.textDecoration = 'underline';
+    msgEl.appendChild(link);
+    
+    // Emojis
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
+    
+
     
 
 // Create heart explosion animation
